@@ -1,24 +1,22 @@
 <template>
-  <div class="hello">
     <!-- NAVBAR  -->
-    <nav class="navbar">
+    <nav class="navbar position-absolute">
       <div class="container py-4">
         <img
           src="@/assets/img/avadabarbers-logo-200x70.png"
           alt="logo"
-          class=""
+          class="img-fluid"
         />
         <div>
           <a class="navbar-brand" href="#">
-            <i class="fas fa-shopping-cart fs-4"></i>
+            <i class="fas fa-shopping-cart fs-4 m-1"></i>
           </a>
           <a class="navbar-brand" href="#">
-            <i class="fas fa-bars fs-4"></i>
+            <i class="fas fa-bars fs-4 m-1"></i>
           </a>
         </div>
       </div>
     </nav>
-  </div>
 </template>
 
 <script>
@@ -28,4 +26,14 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@import "../scss/style.scss";
+
+.navbar{
+  height: 90px;
+  width: 100%;
+  a {
+    color: $popular;
+  }
+}
+</style>
