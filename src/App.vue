@@ -8,8 +8,9 @@
       <SectionHero
         title="Barber Shop"
         slogan="The Pinnacle of Male Grooming"
-        button="LEARN MORE"
+        button="learn more"
       />
+      <ShoppingCart info="Demos" cart="On Sale" value="39" />
     </main>
   </div>
 </template>
@@ -17,12 +18,14 @@
 <script>
 import Header from "@/components/Header.vue";
 import SectionHero from "@/components/SectionHero.vue";
+import ShoppingCart from "@/components/ShoppingCart.vue";
 
 export default {
   name: "App",
   components: {
     Header,
     SectionHero,
+    ShoppingCart,
   },
 };
 </script>

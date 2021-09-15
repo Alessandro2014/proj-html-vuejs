@@ -5,13 +5,13 @@
       <div class="row">
         <!-- COLONNA INFO DI PRESENTAZIONE -->
         <div
-          class="col-6 d-flex align-items-start flex-column justify-content-center py-5 d-grid gap-5"
+          class="col-6 d-flex align-items-start flex-column justify-content-center py-5 d-grid gap-4"
         >
           <h1>{{ title }}</h1>
           <div class="border-separator"></div>
           <h3>{{ slogan }}</h3>
-          <div>
-            <a href="">{{ button }}</a>
+          <div class="button-more text-uppercase py-3 px-5">
+            <a href="#">{{ button }}</a>
           </div>
         </div>
         <!-- COLONNA FOTO -->
@@ -53,11 +53,25 @@ export default {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 5.5rem;
   color: $popular;
+  font-family: $font-avada;
 }
 
 h3 {
   font-size: 1.5rem;
+  font-family: $font-general;
+  color: $regular;
+  font-weight: 400;
+}
+
+.button-more {
+  border: 2px solid $important;
+  a {
+    color: $important;
+    font-family: $font-general;
+    text-decoration: none;
+    font-weight: 400;
+  }
 }
 </style>

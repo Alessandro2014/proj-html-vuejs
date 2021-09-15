@@ -7,7 +7,7 @@
           alt="logo"
           class="img-fluid"
         />
-        <div>
+        <div class="cursor">
           <a class="navbar-brand" href="#">
             <i class="fas fa-shopping-cart fs-4 m-1"></i>
           </a>
