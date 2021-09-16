@@ -13,6 +13,7 @@
       <ShoppingCart info="Demos" cart="On Sale" value="39" />
       <SectionAward/>
       <SectionServices/>
+      <SectionProducts/>
     </main>
   </div>
 </template>
@@ -23,6 +24,8 @@ import SectionHero from "@/components/SectionHero.vue";
 import ShoppingCart from "@/components/ShoppingCart.vue";
 import SectionAward from "@/components/SectionAward.vue";
 import SectionServices from "@/components/SectionServices.vue";
+import SectionProducts from "@/components/SectionProducts.vue";
+
 
 
 
@@ -35,6 +38,7 @@ export default {
     ShoppingCart,
     SectionAward,
     SectionServices,
+    SectionProducts,
   },
 };
 </script>

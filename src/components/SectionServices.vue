@@ -3,46 +3,46 @@
   <section id="services" class="position-relative">
     <div class="container">
       <!-- COLONNA TITOLO -->
-      <div class="row text-center py-5">
-        <div class="col-12 py-1">
+      <div class="row text-center">
+        <div class="col-12">
           <h4>MENS GROOMING</h4>
         </div>
-        <div class="col-12 py-1">
+        <div class="col-12 pb-5">
           <h2>Services</h2>
         </div>
         <!-- COLONNE DESCRIZIONE SERVIZI -->
-        <div class="col-4 py-5">
-          <figure class="p-2">
+        <div class="col-4 p-5">
+          <figure>
             <img
               src="@/assets/img/avadabarbers-trimcut-before.png"
               alt="trimcut"
             />
           </figure>
           <h3>Trim & Cut</h3>
-          <p>
+          <p class="lh-lg mt-4 fs-5">
             Avada Barbers are experts in the lickety split trim and hair cut.
             Quick but careful and ridiculously good looking.
           </p>
         </div>
-        <div class="col-4 py-5">
-          <figure class="p-2">
+        <div class="col-4 p-5">
+          <figure>
             <img src="@/assets/img/avadabarbers-washndry.png" alt="washndry" />
           </figure>
           <h3>Wash & Dry</h3>
-          <p>
+          <p class="lh-lg mt-4 fs-5">
             Take a seat in our fine leather chairs, lean back and let us lather
             you a fresh head in a luxurious fashion.
           </p>
         </div>
-        <div class="col-4 py-5">
-          <figure class="p-2">
+        <div class="col-4 p-5">
+          <figure>
             <img
               src="@/assets/img/avadabarbers-beardtrim.png"
               alt="beardtrim"
             />
           </figure>
           <h3>Beard Tidy</h3>
-          <p>
+          <p class="lh-lg mt-4 fs-5">
             Tame the tangles and untidy facial hairs like a gentleman with our
             Beard Tidy services from Avada Barbers.
           </p>
@@ -83,7 +83,7 @@ export default {
 @import "../scss/style.scss";
 // BACKGROUND
 #services {
-  height: 100vh;
+  padding: 50px 0 170px 0;
 }
 // TESTO
 h2 {
@@ -105,10 +105,9 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
-  font-weight: 300;
   font-family: $font-general;
   color: $regular;
+  font-weight: 300;
 }
 
 .button-services {
