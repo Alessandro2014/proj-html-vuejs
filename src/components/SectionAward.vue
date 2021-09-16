@@ -16,7 +16,7 @@
           gap-2
         "
       >
-        <h3>AWARD WINNING</h3>
+        <h4>AWARD WINNING</h4>
         <h2>Pro Barbers</h2>
         <div class="button-more text-uppercase py-3 px-5">
           <a href="#">MEET YOUR NEW BARBER</a>
@@ -69,8 +69,8 @@ h2 {
   font-family: $font-avada;
 }
 
-h3 {
-  font-size: 1rem;
+h4 {
+  font-size: 1.1rem;
   font-family: $font-general;
   color: $important;
   font-weight: 400;

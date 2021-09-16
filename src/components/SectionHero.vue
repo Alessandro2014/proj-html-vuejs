@@ -9,7 +9,7 @@
         >
           <h1>{{ title }}</h1>
           <div class="border-separator"></div>
-          <h3>{{ slogan }}</h3>
+          <h4>{{ slogan }}</h4>
           <div class="button-more text-uppercase py-3 px-5">
             <a href="#">{{ button }}</a>
           </div>
@@ -37,6 +37,7 @@ export default {
 <style scoped lang="scss">
 @import "../scss/style.scss";
 
+// BACKGROUND
 #hero {
   height: 100vh;
   background-image: url("../assets/img/avadabarbers-hero-bg.jpg");
@@ -44,7 +45,7 @@ export default {
   background-position: top;
   background-repeat: no-repeat;
 }
-
+// COLONNE
 .row {
   padding: 100px 0;
 }
@@ -61,13 +62,14 @@ h1 {
   font-family: $font-avada;
 }
 
-h3 {
+h4 {
   font-size: 1.5rem;
   font-family: $font-general;
   color: $regular;
   font-weight: 400;
 }
 
+//BOTTONE
 .button-more {
   border: 2px solid $important;
   a {
@@ -76,5 +78,9 @@ h3 {
     text-decoration: none;
     font-weight: 400;
   }
+}
+
+.button-more:hover {
+  background-color: black;
 }
 </style>
