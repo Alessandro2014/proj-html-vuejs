@@ -11,6 +11,7 @@
         button="learn more"
       />
       <ShoppingCart info="Demos" cart="On Sale" value="39" />
+      <SectionAward/>
     </main>
   </div>
 </template>
@@ -19,6 +20,8 @@
 import Header from "@/components/Header.vue";
 import SectionHero from "@/components/SectionHero.vue";
 import ShoppingCart from "@/components/ShoppingCart.vue";
+import SectionAward from "@/components/SectionAward.vue";
+
 
 export default {
   name: "App",
@@ -26,6 +29,7 @@ export default {
     Header,
     SectionHero,
     ShoppingCart,
+    SectionAward,
   },
 };
 </script>

@@ -40,6 +40,9 @@ export default {
 #hero {
   height: 100vh;
   background-image: url("../assets/img/avadabarbers-hero-bg.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .row {

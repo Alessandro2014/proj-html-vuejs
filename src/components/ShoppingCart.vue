@@ -1,16 +1,20 @@
 <template>
   <div>
+    <!-- BOTTONI LATERALI -->
     <div
-      class="button-info  cursor position-fixed d-flex flex-column justify-content-between text-center"
+      class="button-info rounded-3 cursor position-fixed d-flex flex-column justify-content-around text-center"
     >
+      <!-- DEMO + CARRELLO -->
       <i class="fas fa-file-video fs-3"></i>
-      {{ info }}
+      <p class="m-0">{{ info }}</p>
     </div>
     <div
-      class="button-cart  cursor position-fixed d-flex flex-column justify-content-between text-center"
+      class="button-cart rounded-3 cursor position-fixed d-flex flex-column justify-content-around text-center"
     >
+      <!--CARRELLO -->
+
       <span class="price fs-3"><sup>$</sup>{{ value }}</span>
-      {{ cart }}
+      <p class="m-0">{{ cart }}</p>
     </div>
   </div>
 </template>
@@ -25,14 +29,14 @@ export default {
 <style scoped lang="scss">
 @import "../scss/style.scss";
 
+// POSIZIONAMENTO E LAYOUT BOTTONI
 .button-info,
 .button-cart {
   background-color: $popular;
-  right: 10px;
-  padding: 8px 6px;
+  right: 15px;
+  padding: 8px 5px;
   width: 65px;
   height: 65px;
-  border-radius: 5px;
   font-size: 0.8rem;
 }
 
@@ -46,6 +50,6 @@ export default {
 
 .price {
   color: $price;
-  font-weight: 800;
+  font-weight: 600;
 }
 </style>
