@@ -67,18 +67,17 @@
     </section>
     <!-- SEZIONE PRODOTTO DEL MESE-->
     <section>
-      <div id="product-window" class="container">
+      <div id="product-window" class="container mb-5">
         <div class="row">
           <div class="col-5 text-center img-product">
             <img
               src="@/assets/img/shaving_butter-400x400.png"
               alt="shaving_butter"
-              class="img-fluid"
             />
           </div>
           <div
             class="
-                product-description
+                description-product
                 col-7
                 d-flex
                 align-items-start
@@ -166,24 +165,22 @@ figcaption {
 //  SEZIONE PRODOTTO DEL MESE
 #product-window {
   background-color: black;
-  margin-top: -50px;  
+  margin-top: -50px;
   border-top: 4px solid $important;
   max-width: 1300px;
-  max-height: 500px;
-
+  max-height: 510px;
 }
-
+.description-product {
+  padding: 65px;
+}
 .img-product {
   background-image: url("../assets/img/avadabarbers-cta-background.jpg");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-  padding: 70px 0;
-  max-height: 500px;
-}
-
-.product-description {
-    padding: 70px;
+  img {
+    height: 500px;
+  }
 }
 
 .button-now {

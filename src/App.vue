@@ -11,9 +11,10 @@
         button="learn more"
       />
       <ShoppingCart info="Demos" cart="On Sale" value="39" />
-      <SectionAward/>
-      <SectionServices/>
-      <SectionProducts/>
+      <SectionAward />
+      <SectionServices />
+      <SectionProducts />
+      <SectionReviews />
     </main>
   </div>
 </template>
@@ -25,10 +26,7 @@ import ShoppingCart from "@/components/ShoppingCart.vue";
 import SectionAward from "@/components/SectionAward.vue";
 import SectionServices from "@/components/SectionServices.vue";
 import SectionProducts from "@/components/SectionProducts.vue";
-
-
-
-
+import SectionReviews from "@/components/SectionReviews.vue";
 
 export default {
   name: "App",
@@ -39,6 +37,7 @@ export default {
     SectionAward,
     SectionServices,
     SectionProducts,
+    SectionReviews,
   },
 };
 </script>
