@@ -58,7 +58,7 @@
           height="100"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          style="fill:#121314;padding:0;"
+          style="fill:#fcfcfc;padding:0;"
         >
           <path d="M0 100 L50 2 L100 100 Z" />
         </svg>
@@ -97,6 +97,7 @@ h3 {
   font-family: $font-avada;
   font-size: 1.5rem;
   padding: 3rem 0;
+  font-style: italic;
 }
 
 p {
@@ -124,7 +125,9 @@ img {
 
 //POSIZIONAMENTO SVG
 svg {
-  bottom: 0;
+   bottom: 0;
   left: 0;
+  transform: rotate(180deg);
+  background-color: #eae8e6;
 }
 </style>

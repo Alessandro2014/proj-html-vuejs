@@ -15,6 +15,7 @@
       <SectionServices />
       <SectionProducts />
       <SectionReviews />
+      <SectionBlog/>
     </main>
   </div>
 </template>
@@ -27,6 +28,8 @@ import SectionAward from "@/components/SectionAward.vue";
 import SectionServices from "@/components/SectionServices.vue";
 import SectionProducts from "@/components/SectionProducts.vue";
 import SectionReviews from "@/components/SectionReviews.vue";
+import SectionBlog from "@/components/SectionBlog.vue";
+
 
 export default {
   name: "App",
@@ -38,6 +41,7 @@ export default {
     SectionServices,
     SectionProducts,
     SectionReviews,
+    SectionBlog,
   },
 };
 </script>
