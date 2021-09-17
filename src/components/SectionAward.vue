@@ -18,9 +18,9 @@
       >
         <h4>AWARD WINNING</h4>
         <h2>Pro Barbers</h2>
-        <div class="button-more text-uppercase py-3 px-5">
-          <a href="#">MEET YOUR NEW BARBER</a>
-        </div>
+        <ButtonLg>
+          meet your new barber
+        </ButtonLg>
       </div>
     </div>
     <!-- SEPARATORE CON SVG -->
@@ -42,8 +42,12 @@
 </template>
 
 <script>
+import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "SectionAward",
+  components: {
+    ButtonLg,
+  },
 };
 </script>
 
@@ -74,16 +78,6 @@ h4 {
   font-family: $font-general;
   color: $important;
   font-weight: 400;
-}
-
-.button-more {
-  border: 2px solid $important;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 400;
-  }
 }
 
 //POSIZIONAMENTO SVG

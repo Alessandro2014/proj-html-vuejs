@@ -10,9 +10,9 @@
           <h1>{{ title }}</h1>
           <div class="border-separator"></div>
           <h4>{{ slogan }}</h4>
-          <div class="button-more text-uppercase py-3 px-5">
-            <a href="#">{{ button }}</a>
-          </div>
+          <ButtonLg class=" button-more">
+            learn moore
+          </ButtonLg>
         </div>
         <!-- COLONNA FOTO -->
         <div class="col-6">
@@ -28,9 +28,13 @@
 </template>
 
 <script>
+import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "SectionHero",
-  props: ["title", "slogan", "button"],
+  props: ["title", "slogan"],
+  components: {
+    ButtonLg,
+  },
 };
 </script>
 
@@ -52,7 +56,7 @@ export default {
 
 .border-separator {
   height: 3px;
-  width: 200px;
+  width: 250px;
   background-color: $important;
 }
 
@@ -70,15 +74,6 @@ h4 {
 }
 
 //BOTTONE
-.button-more {
-  border: 2px solid $important;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 400;
-  }
-}
 
 .button-more:hover {
   background-color: black;

@@ -4,30 +4,28 @@
       <div class="row text-center">
         <!-- COLONNE SHOP -->
         <div
-          class="col-4 d-flex flex-column justify-content-end py-5 d-grid gap-4"
+          class="col-5 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
-          <figure>
+          <figure class="m-0">
             <img
               src="@/assets/img/avadabarbers_footer_shop_image-400x312.png"
               alt="avadabarbers-logo-200x70"
-              class="img-fluid"
             />
           </figure>
           <div>
-            <div class="button-blog text-uppercase py-3 px-5">
-              <a href="#">shop our range now</a>
-            </div>
+            <ButtonLg>
+              shop our range now
+            </ButtonLg>
           </div>
         </div>
         <!-- COLONNA CONTATTI -->
         <div
-          class="col-4 d-flex flex-column justify-content-end py-5 d-grid gap-4"
+          class="col-2 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
           <figure>
             <img
               src="@/assets/img/avadabarbers-logo-200x70.png"
               alt="avadabarbers-logo-200x70"
-              class="img-fluid"
             />
           </figure>
           <p class="lh-lg">
@@ -38,7 +36,7 @@
             +1 (555) 555-1212
           </p>
           <h4>FOLLOW US</h4>
-          <div class="d-flex justify-content-evenly text-white fs-5 py-3 px-5">
+          <div class="d-flex justify-content-around text-white fs-5 py-3">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>
             <i class="fab fa-youtube"></i>
@@ -47,19 +45,19 @@
         </div>
         <!-- COLONNA APPUNTAMENTI -->
         <div
-          class="col-4 d-flex flex-column justify-content-end py-5 d-grid gap-4"
+          class="col-5 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
-          <figure>
+          <figure class="m-0">
             <img
-              src="@/assets/img/avadabarbers_hero_focalmirror-200x275.png"
+              src="@/assets/img/avadabarbers_footer_appointment_image-400x312.png"
               alt="avadabarbers-logo-200x70"
-              class="img-fluid"
             />
           </figure>
           <div>
-            <div class="button-blog text-uppercase py-3 px-5">
-              <a href="#">book your appointment</a>
-            </div>
+            <ButtonLg>
+              book your appointment
+            </ButtonLg>
+
           </div>
         </div>
       </div>
@@ -68,8 +66,12 @@
 </template>
 
 <script>
+import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "Footer",
+  components: {
+    ButtonLg,
+  },
 };
 </script>
 
@@ -93,18 +95,7 @@ p {
 
 img {
   height: auto;
-  max-width: 150px;
-  margin-bottom: 20px;
-}
-
-.button-blog {
-  border: 2px solid $important;
-  display: inline-block;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 600;
-  }
+  max-width: 100%;
+  margin: 0;
 }
 </style>

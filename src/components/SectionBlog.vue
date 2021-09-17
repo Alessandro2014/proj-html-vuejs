@@ -46,9 +46,9 @@
         </div>
         <!-- BOTTONE 'SCOPRI I BLOG' -->
         <div class="col-12">
-          <div class="button-blog text-uppercase py-3 px-5 my-5">
-            <a href="#">Read More From Our Blog</a>
-          </div>
+          <ButtonLg>
+            Read More From Our Blog
+          </ButtonLg>
         </div>
       </div>
     </div>
@@ -56,8 +56,12 @@
 </template>
 
 <script>
+import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "SectionBlog",
+  components: {
+    ButtonLg,
+  },
 };
 </script>
 
@@ -91,17 +95,6 @@ p {
   font-family: $font-general;
   color: $regular;
   font-weight: 300;
-}
-
-.button-blog {
-  border: 2px solid $important;
-  display: inline-block;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 600;
-  }
 }
 
 // IMMAGINI

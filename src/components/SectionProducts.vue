@@ -58,9 +58,9 @@
           </div>
           <!-- BOTTONE 'SHOP PRODOTTI' -->
           <div class="col-12">
-            <div class="button-products text-uppercase py-3 px-5 my-5">
-              <a href="#">Shop Our Product Range</a>
-            </div>
+            <ButtonLg >
+              Shop Our Product Range
+            </ButtonLg>
           </div>
         </div>
       </div>
@@ -94,8 +94,10 @@
               Pellentesque laoreet enim est, vel molestie dolor ultrices ut.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div class="button-now text-uppercase py-3 px-5">
-              <a href="#">BUY NOW</a>
+            <div class="text-uppercase py-3 px-5">
+              <ButtonLg >
+                buy now
+              </ButtonLg>
             </div>
           </div>
         </div>
@@ -105,8 +107,12 @@
 </template>
 
 <script>
+import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "SectionProducts",
+  components: {
+    ButtonLg,
+  },
 };
 </script>
 
@@ -116,9 +122,9 @@ export default {
 #products {
   background-image: url("../assets/img/avadabarbers-reviewsbackground.jpg");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 70px 0;
+  padding: 70px 0 120px;
 }
 // TESTO
 h2 {
@@ -145,51 +151,33 @@ figcaption {
   color: $important;
 }
 
-#product-window p {
-  font-family: $font-general;
-  color: $regular;
-  font-weight: 300;
-}
 
-.button-products {
-  border: 2px solid $important;
-  display: inline-block;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 600;
-  }
-}
 
 //  SEZIONE PRODOTTO DEL MESE
 #product-window {
   background-color: black;
   margin-top: -50px;
   border-top: 4px solid $important;
-  max-width: 1300px;
-  max-height: 510px;
+  max-width: 1200px;
+  height: 510px;
 }
 .description-product {
-  padding: 65px;
+  padding: 60px;
 }
 .img-product {
   background-image: url("../assets/img/avadabarbers-cta-background.jpg");
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+  height: 505px;
   img {
     height: 500px;
   }
 }
 
-.button-now {
-  border: 2px solid $important;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 400;
-  }
+#product-window p {
+  font-family: $font-general;
+  color: $regular;
+  font-weight: 300;
 }
 </style>

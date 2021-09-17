@@ -106,17 +106,6 @@ p {
   font-weight: 300;
 }
 
-.button-reviews {
-  border: 2px solid $important;
-  display: inline-block;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 600;
-  }
-}
-
 // IMMAGINI
 img {
   max-width: 110px;
