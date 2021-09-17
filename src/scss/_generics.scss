@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+  color: $popular;
+  font-family: $font-avada;
+  color: $title;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: $title;
+  font-family: $font-avada;
+}
+
+h3 {
+  color: $important;
+  font-family: $font-avada;
+  font-size: 2.5rem;
+}
+
+h4 {
+  color: $important;
+  font-family: $font-general;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+h5 {
+  color: $regular;
+  font-family: $font-general;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-family: $font-general;
+  color: $regular;
+  font-weight: 300;
+}
+
+figcaption {
+  color: $important;
+  font-family: $font-avada;
+  font-size: 2rem;
+}

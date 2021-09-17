@@ -2,18 +2,17 @@
   <div id="app">
     <!-- COMPONENTE HEADER -->
     <header>
-      <Header />
+      <Header :logo="logo" />
     </header>
     <main>
       <Hero
         title="Barber Shop"
         slogan="The Pinnacle of Male Grooming"
-        button="learn more"
       />
       <Main/>
     </main>
     <footer>
-      <Footer />
+      <Footer :logo="logo" />
       <Credits/>
     </footer>
   </div>
@@ -29,6 +28,11 @@ import Credits from "@/components/Credits.vue";
 
 export default {
   name: "App",
+  data() {
+    return {
+      logo: require("@/assets/img/avadabarbers-logo-200x70.png"),
+    }
+  },
   components: {
     Header,
     Hero,
@@ -42,9 +46,4 @@ export default {
 <style lang="scss">
 // IMPORTO STYLE CON BOOTSTRAP
 @import "scss/style.scss";
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
 </style>

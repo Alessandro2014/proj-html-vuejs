@@ -1,7 +1,9 @@
 <template>
   <div>
     <!-- COMPONENTE BOTTONE IMPORTATO NEGLI ALTRI COMPONENTI -->
-    <div class="button-avada-large d-inline-block text-uppercase fw-bolder py-3 px-4 my-2">
+    <div
+      class="button-avada-large d-inline-block text-uppercase fw-bolder py-3 px-4 my-2"
+    >
       <a href="#" class="text-decoration-none ">
         <slot></slot>
       </a>

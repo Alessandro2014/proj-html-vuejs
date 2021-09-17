@@ -11,54 +11,25 @@
           <div class="col-12 py-1">
             <h2>Avada Grooming Products</h2>
           </div>
-          <!-- COLONNE VETRINA PRODOTTI -->
-          <div class="col-3 py-5">
+          <!-- COLONNE VETRINA PRODOTTI STAMPA CON DATI DINAMICI-->
+          <div
+            v-for="(product, index) in products"
+            :key="index"
+            class="col-3 py-5"
+          >
             <img
-              src="@/assets/img/brush_dark-400x400.png"
-              alt="brush_dark"
+              :src="getUrlImg(product.img)"
+              :alt="product.name"
               class="img-fluid"
             />
-            <figcaption>Trim & Cut</figcaption>
+            <figcaption>{{ product.name }}</figcaption>
             <p>
-              $ 15.00
-            </p>
-          </div>
-          <div class="col-3 py-5">
-            <img
-              src="@/assets/img/scissors-400x400.png"
-              alt="scissors"
-              class="img-fluid"
-            />
-            <figcaption>Wash & Dry</figcaption>
-            <p>
-              $ 85.00
-            </p>
-          </div>
-          <div class="col-3 py-5">
-            <img
-              src="@/assets/img/hot_oil_dark-400x400.png"
-              alt="hot_oil_dark"
-              class="img-fluid"
-            />
-            <figcaption>Beard Tidy</figcaption>
-            <p>
-              $ 15.00
-            </p>
-          </div>
-          <div class="col-3 py-5">
-            <img
-              src="@/assets/img/straight_razor_dark-400x400.png"
-              class="img-fluid"
-              alt="straight_razor_dark"
-            />
-            <figcaption>Beard Tidy</figcaption>
-            <p>
-              $ 30.00
+              {{ product.price }}
             </p>
           </div>
           <!-- BOTTONE 'SHOP PRODOTTI' -->
           <div class="col-12">
-            <ButtonLg >
+            <ButtonLg>
               Shop Our Product Range
             </ButtonLg>
           </div>
@@ -95,7 +66,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div class="text-uppercase py-3 px-5">
-              <ButtonLg >
+              <ButtonLg>
                 buy now
               </ButtonLg>
             </div>
@@ -110,14 +81,51 @@
 import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "SectionProducts",
+  data() {
+    return {
+      // DETTAGLIO PRODOTTI
+      products: [
+        {
+          img: "brush_dark-400x400.png",
+          name: "Trim & Cut",
+          price: "$ 15.00",
+          current: false,
+        },
+        {
+          img: "scissors-400x400.png",
+          name: "Wash & Dry",
+          price: "$ 85.00",
+          current: false,
+        },
+        {
+          img: "hot_oil_dark-400x400.png",
+          name: "Beard Tidy",
+          price: "$ 15.00",
+          current: false,
+        },
+        {
+          img: "straight_razor_dark-400x400.png",
+          name: "Beard Tidy",
+          price: "$ 30.00",
+          current: false,
+        },
+      ],
+    };
+  },
   components: {
     ButtonLg,
+  },
+  methods: {
+    getUrlImg(fileName) {
+      return require("@/assets/img/" + fileName);
+    },
   },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../scss/style.scss";
+
 // BACKGROUND
 #products {
   background-image: url("../assets/img/avadabarbers-reviewsbackground.jpg");
@@ -126,32 +134,6 @@ export default {
   background-repeat: no-repeat;
   padding: 70px 0 120px;
 }
-// TESTO
-h2 {
-  font-size: 4.5rem;
-  color: $title;
-  font-family: $font-avada;
-}
-
-h4 {
-  color: $important;
-  font-family: $font-general;
-  font-size: 1.1rem;
-}
-
-figcaption {
-  color: $important;
-  font-family: $font-avada;
-  font-size: 2rem;
-}
-
-#products p {
-  font-size: 1.2rem;
-  font-family: $font-general;
-  color: $important;
-}
-
-
 
 //  SEZIONE PRODOTTO DEL MESE
 #product-window {
@@ -161,9 +143,11 @@ figcaption {
   max-width: 1200px;
   height: 510px;
 }
+
 .description-product {
   padding: 60px;
 }
+
 .img-product {
   background-image: url("../assets/img/avadabarbers-cta-background.jpg");
   background-size: cover;
@@ -173,11 +157,5 @@ figcaption {
   img {
     height: 500px;
   }
-}
-
-#product-window p {
-  font-family: $font-general;
-  color: $regular;
-  font-weight: 300;
 }
 </style>

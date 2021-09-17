@@ -23,10 +23,7 @@
           class="col-2 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
           <figure>
-            <img
-              src="@/assets/img/avadabarbers-logo-200x70.png"
-              alt="avadabarbers-logo-200x70"
-            />
+            <img :src="logo" alt="avadabarbers-logo-200x70" />
           </figure>
           <p class="lh-lg">
             Avada Barbers <br />
@@ -57,7 +54,6 @@
             <ButtonLg>
               book your appointment
             </ButtonLg>
-
           </div>
         </div>
       </div>
@@ -69,6 +65,7 @@
 import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "Footer",
+  props: ["logo"],
   components: {
     ButtonLg,
   },
@@ -81,18 +78,7 @@ export default {
   background-color: black;
 }
 
-h4 {
-  color: $important;
-  font-family: $font-general;
-  font-size: 1.1rem;
-}
-
-p {
-  font-family: $font-general;
-  color: $regular;
-  font-weight: 300;
-}
-
+// IMMAGINI
 img {
   height: auto;
   max-width: 100%;

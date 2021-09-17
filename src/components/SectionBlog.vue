@@ -46,7 +46,7 @@
         </div>
         <!-- BOTTONE 'SCOPRI I BLOG' -->
         <div class="col-12">
-          <ButtonLg>
+          <ButtonLg class="button">
             Read More From Our Blog
           </ButtonLg>
         </div>
@@ -71,30 +71,6 @@ export default {
 #blog {
   background-color: #eae8e6;
   padding: 170px 0 70px;
-}
-// TESTO
-h2 {
-  font-size: 4.5rem;
-  color: $title;
-  font-family: $font-avada;
-}
-
-h4 {
-  color: $important;
-  font-family: $font-general;
-  font-size: 1.1rem;
-}
-
-h3 {
-  color: $important;
-  font-family: $font-avada;
-  font-size: 2.5rem;
-}
-
-p {
-  font-family: $font-general;
-  color: $regular;
-  font-weight: 300;
 }
 
 // IMMAGINI

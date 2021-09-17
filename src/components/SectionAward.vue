@@ -66,20 +66,6 @@ export default {
   height: 450px;
 }
 
-// TESTO
-h2 {
-  font-size: 4.5rem;
-  color: $title;
-  font-family: $font-avada;
-}
-
-h4 {
-  font-size: 1.1rem;
-  font-family: $font-general;
-  color: $important;
-  font-weight: 400;
-}
-
 //POSIZIONAMENTO SVG
 svg {
   bottom: 0;

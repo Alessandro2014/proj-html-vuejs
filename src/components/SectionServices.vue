@@ -50,7 +50,9 @@
         <!-- BOTTONE 'SCOPRI I SERVIZI' -->
         <div class="col-12">
           <div class="button-services text-uppercase py-3 px-5 my-5">
-            <a href="#">Read About Our Services</a>
+            <ButtonLg>
+              Read About Our Services
+            </ButtonLg>
           </div>
         </div>
       </div>
@@ -64,7 +66,7 @@
           height="100"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          style="fill:#121314;padding:0;"
+          style="fill:#FFFFFF;padding:0;"
         >
           <path d="M0 100 L50 2 L100 100 Z" />
         </svg>
@@ -74,8 +76,12 @@
 </template>
 
 <script>
+import ButtonLg from "@/components/ButtonLg.vue";
 export default {
   name: "SectionServices",
+   components: {
+    ButtonLg,
+  },
 };
 </script>
 
@@ -84,41 +90,6 @@ export default {
 // BACKGROUND
 #services {
   padding: 50px 0 170px 0;
-}
-// TESTO
-h2 {
-  font-size: 4.5rem;
-  color: $title;
-  font-family: $font-avada;
-}
-
-h4 {
-  color: $important;
-  font-family: $font-general;
-  font-size: 1.1rem;
-}
-
-h3 {
-  color: $important;
-  font-family: $font-avada;
-  font-size: 2.5rem;
-}
-
-p {
-  font-family: $font-general;
-  color: $regular;
-  font-weight: 300;
-}
-
-.button-services {
-  border: 2px solid $important;
-  display: inline-block;
-  a {
-    color: $important;
-    font-family: $font-general;
-    text-decoration: none;
-    font-weight: 600;
-  }
 }
 
 // IMMAGINI

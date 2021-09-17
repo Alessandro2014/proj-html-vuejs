@@ -17,10 +17,11 @@
             mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
             placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
           </p>
-            <img
-              src="@/assets/img/avadabarbers-trimcut-gallery6-200x200.jpg"
-              alt="trimcut" class="rounded-circle "
-            />
+          <img
+            src="@/assets/img/avadabarbers-trimcut-gallery6-200x200.jpg"
+            alt="trimcut"
+            class="rounded-circle "
+          />
           <h3>John Doe</h3>
         </div>
         <div class="col-4 p-5">
@@ -29,10 +30,11 @@
             mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
             placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
           </p>
-            <img
-              src="@/assets/img/avadabarbers-trimcut-gallery7-200x201.jpg"
-              alt="washndry" class="rounded-circle "
-            />
+          <img
+            src="@/assets/img/avadabarbers-trimcut-gallery7-200x201.jpg"
+            alt="washndry"
+            class="rounded-circle "
+          />
           <h3>Pete Jones</h3>
         </div>
         <div class="col-4 p-5">
@@ -41,10 +43,11 @@
             mollis eleifend ante ut sagittis. Sed sodales, urna et imperdiet
             placerat, ex nisi aliquam orci, ac varius odio libero et arcu.
           </p>
-            <img
-              src="@/assets/img/avadabarbers-trimcut-gallery3-200x201.jpg"
-              alt="beardtrim" class="rounded-circle "
-            />
+          <img
+            src="@/assets/img/avadabarbers-trimcut-gallery3-200x201.jpg"
+            alt="beardtrim"
+            class="rounded-circle "
+          />
           <h3>Mark Wilson</h3>
         </div>
       </div>
@@ -79,32 +82,6 @@ export default {
 #reviews {
   padding: 50px 0 170px 0;
 }
-// TESTO
-h2 {
-  font-size: 4.5rem;
-  color: $title;
-  font-family: $font-avada;
-}
-
-h4 {
-  color: $important;
-  font-family: $font-general;
-  font-size: 1.1rem;
-}
-
-h3 {
-  color: $important;
-  font-family: $font-avada;
-  font-size: 1.5rem;
-  padding: 3rem 0;
-  font-style: italic;
-}
-
-p {
-  font-family: $font-general;
-  color: $regular;
-  font-weight: 300;
-}
 
 // IMMAGINI
 img {
@@ -114,7 +91,7 @@ img {
 
 //POSIZIONAMENTO SVG
 svg {
-   bottom: 0;
+  bottom: 0;
   left: 0;
   transform: rotate(180deg);
   background-color: #eae8e6;
