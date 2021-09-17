@@ -5,47 +5,36 @@
       <Header />
     </header>
     <main>
-      <SectionHero
+      <Hero
         title="Barber Shop"
         slogan="The Pinnacle of Male Grooming"
         button="learn more"
       />
-      <ShoppingCart info="Demos" cart="On Sale" value="39" />
-      <SectionAward />
-      <SectionServices />
-      <SectionProducts />
-      <SectionReviews />
-      <SectionBlog />
+      <Main/>
     </main>
     <footer>
       <Footer />
+      <Credits/>
     </footer>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-import SectionHero from "@/components/SectionHero.vue";
-import ShoppingCart from "@/components/ShoppingCart.vue";
-import SectionAward from "@/components/SectionAward.vue";
-import SectionServices from "@/components/SectionServices.vue";
-import SectionProducts from "@/components/SectionProducts.vue";
-import SectionReviews from "@/components/SectionReviews.vue";
-import SectionBlog from "@/components/SectionBlog.vue";
+import Hero from "@/components/Hero.vue";
+import Main from "@/components/Main.vue";
 import Footer from "@/components/Footer.vue";
+import Credits from "@/components/Credits.vue";
+
 
 export default {
   name: "App",
   components: {
     Header,
-    SectionHero,
-    ShoppingCart,
-    SectionAward,
-    SectionServices,
-    SectionProducts,
-    SectionReviews,
-    SectionBlog,
+    Hero,
+    Main,
     Footer,
+    Credits
   },
 };
 </script>

@@ -9,10 +9,10 @@
         />
         <div class="cursor">
           <a class="navbar-brand" href="#">
-            <i class="fas fa-shopping-cart fs-4 m-1"></i>
+            <i class="fas fa-shopping-cart fs-5 ms-1"></i>
           </a>
           <a class="navbar-brand" href="#">
-            <i class="fas fa-bars fs-4 m-1"></i>
+            <i class="fas fa-bars fs-5 ms-1"></i>
           </a>
         </div>
       </div>
@@ -30,10 +30,13 @@ export default {
 @import "../scss/style.scss";
 
 .navbar{
-  height: 90px;
   width: 100%;
-  a {
+}
+a {
     color: $popular;
   }
+
+a:hover {
+  color: $important;
 }
 </style>

@@ -4,7 +4,7 @@
       <div class="row text-center">
         <!-- COLONNE SHOP -->
         <div
-          class="col-4 d-flex flex-column justify-content-center py-5 d-grid gap-4"
+          class="col-4 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
           <figure>
             <img
@@ -21,7 +21,7 @@
         </div>
         <!-- COLONNA CONTATTI -->
         <div
-          class="col-4 d-flex flex-column justify-content-center py-5 d-grid gap-4"
+          class="col-4 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
           <figure>
             <img
@@ -47,7 +47,7 @@
         </div>
         <!-- COLONNA APPUNTAMENTI -->
         <div
-          class="col-4 d-flex flex-column justify-content-center py-5 d-grid gap-4"
+          class="col-4 d-flex flex-column justify-content-end py-5 d-grid gap-4"
         >
           <figure>
             <img
