@@ -22,7 +22,7 @@
             alt="trimcut"
             class="rounded-circle "
           />
-          <h3>John Doe</h3>
+          <h3 class="my-3">John Doe</h3>
         </div>
         <div class="col-4 p-5">
           <p class="lh-lg mt-4 fs-5">
@@ -35,7 +35,7 @@
             alt="washndry"
             class="rounded-circle "
           />
-          <h3>Pete Jones</h3>
+          <h3 class="my-3">Pete Jones</h3>
         </div>
         <div class="col-4 p-5">
           <p class="lh-lg mt-4 fs-5">
@@ -48,7 +48,7 @@
             alt="beardtrim"
             class="rounded-circle "
           />
-          <h3>Mark Wilson</h3>
+          <h3 class="my-3">Mark Wilson</h3>
         </div>
       </div>
       <!-- SEPARATORE CON SVG -->
@@ -81,6 +81,10 @@ export default {
 // BACKGROUND
 #reviews {
   padding: 50px 0 170px 0;
+}
+
+#reviews h3 {
+  font-size: 1.3rem;
 }
 
 // IMMAGINI

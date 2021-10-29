@@ -46,7 +46,7 @@
         </div>
         <!-- BOTTONE 'SCOPRI I BLOG' -->
         <div class="col-12">
-          <ButtonLg class="button">
+          <ButtonLg class="my-4">
             Read More From Our Blog
           </ButtonLg>
         </div>

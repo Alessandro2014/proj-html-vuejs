@@ -65,7 +65,7 @@
               Pellentesque laoreet enim est, vel molestie dolor ultrices ut.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
-            <div class="text-uppercase py-3 px-5">
+            <div class="text-uppercase">
               <ButtonLg>
                 buy now
               </ButtonLg>
@@ -89,25 +89,25 @@ export default {
           img: "brush_dark-400x400.png",
           name: "Trim & Cut",
           price: "$ 15.00",
-          current: false,
+          current: true,
         },
         {
           img: "scissors-400x400.png",
           name: "Wash & Dry",
           price: "$ 85.00",
-          current: false,
+          current: true,
         },
         {
           img: "hot_oil_dark-400x400.png",
           name: "Beard Tidy",
           price: "$ 15.00",
-          current: false,
+          current: true,
         },
         {
           img: "straight_razor_dark-400x400.png",
           name: "Beard Tidy",
           price: "$ 30.00",
-          current: false,
+          current: true,
         },
       ],
     };
@@ -133,6 +133,10 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   padding: 70px 0 120px;
+}
+
+#products p {
+  color: $important;
 }
 
 //  SEZIONE PRODOTTO DEL MESE

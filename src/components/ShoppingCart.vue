@@ -2,19 +2,19 @@
   <div>
     <!-- BOTTONI LATERALI -->
     <div
-      class="button-info rounded-3 shadow-lg cursor position-fixed d-flex flex-column justify-content-between text-center fw-bold"
+      class="button-info rounded-3 shadow-lg cursor position-fixed d-flex flex-column justify-content-between text-center" role="button"
     >
       <!-- DEMO + CARRELLO -->
       <i class="fas fa-file-video fs-3"></i>
-      <p class="m-0">{{ info }}</p>
+      <p class="m-0  fw-bold">{{ info }}</p>
     </div>
     <div
-      class="button-cart rounded-3 shadow-lg cursor position-fixed d-flex flex-column justify-content-around text-center fw-bold"
+      class="button-cart rounded-3 shadow-lg cursor position-fixed d-flex flex-column justify-content-around text-center fw-bold" role="button"
     >
       <!--CARRELLO -->
 
       <span class="price fs-4"><sup>$</sup>{{ value }}</span>
-      <p class="m-0">{{ cart }}</p>
+      <p class="m-0  fw-bold">{{ cart }}</p>
     </div>
   </div>
 </template>
